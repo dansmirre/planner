@@ -1,0 +1,7 @@
+services:
+  planner:
+    build: .
+    container_name: planner
+    restart: unless-stopped
+    ports:
+      - "8088:80"
